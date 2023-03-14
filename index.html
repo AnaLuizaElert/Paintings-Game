@@ -10,11 +10,11 @@
     <title>Jogo do Milhão</title>
 </head>
 <body>
-    <a-scene mindar-image="imageTargetSrc: ./targets (5).mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: ./targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-        <a-entity mindar-image-target="targetIndex: 0">
-          <a-box color="red"></a-box>
+        <a-entity mindar-image-target="targetIndex: 0" class="clickable">
         </a-entity>
     </a-scene>
 </body>
+    <script src="./jogo.js"></script>
 </html>
