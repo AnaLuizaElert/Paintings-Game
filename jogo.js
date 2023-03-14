@@ -1,5 +1,5 @@
 function startGame(){
-    document.getElementById('body').appendChild(
+    document.getElementById('body').append(
         `
         <a-scene mindar-image="imageTargetSrc: ./targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
             <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
