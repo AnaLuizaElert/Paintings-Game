@@ -1,6 +1,6 @@
-body {
-    height: 100%;
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 main{
@@ -8,7 +8,7 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(198,122,177,1) 0%, rgba(173,129,161,0.9668242296918768) 49%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(198,122,177,1) 0%, rgba(173,129,161,0.9668242296918768) 49%, rgba(255,255,255,1) 100%);
 }
 
 button{
@@ -20,4 +20,9 @@ button{
 img{
     height: auto;
     width: 20rem;
+}
+
+body {
+    height: 100%;
+    width: 100%;
 }
