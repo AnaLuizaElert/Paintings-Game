@@ -7,14 +7,21 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(198,122,177,1) 0%, rgba(173,129,161,0.9668242296918768) 49%, rgba(255,255,255,1) 100%);
 }
 
 button{
-    height: 3rem;
-    width: 5rem;
-    background-color: rgb(211, 2, 243);
+    border-radius: 1rem;
+    border: 0;
+    height: 5rem;
+    width: 10rem;
+    background-color: rgb(167, 77, 180);
+    font-size: larger;
 }
 
 img{
