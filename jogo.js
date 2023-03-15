@@ -21,69 +21,102 @@ function startGame(){
         </a-scene>
         <script src="./jogo.js"></script>
         `;
-    alert("Primeira dica: ");    
+    alert("Primeira dica: 😱");    
 }
 
 document.getElementById('img1').addEventListener("targetFound", event  => {
     setInterval(
-        alert("Parabéns!! você encontrou a pintura 'O Grito' de Edvard Munch")
+        alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
     , 5000); 
     localStorage.setItem("Pontuacao", 1);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica:  🌻");
 });
 
 document.getElementById('img2').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'Doze Girassóis' de Vincent van Gogh")
+    , 5000); 
     localStorage.setItem("Pontuacao", 2);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica:  🌃");
 });
 
 document.getElementById('img3').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'Noite Estrelada' de Vincent van Gogh")
+    , 5000); 
     localStorage.setItem("Pontuacao", 3);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica: 👩🏻");
 });
 
 document.getElementById('img4').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'Mona Lisa' de Leonardo da Vinci")
+    , 5000); 
     localStorage.setItem("Pontuacao", 4);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica:   🦶🏜");
 });
 
 
 document.getElementById('img5').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'Abaporu' de Tarsila do Amaral")
+    , 5000); 
     localStorage.setItem("Pontuacao", 5);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica:  🕰🫠🏜");
 });
 
 
 document.getElementById('img6').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'A Persistência da Memória'de Salvador Dalí")
+    , 5000); 
     localStorage.setItem("Pontuacao", 6);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica: 🍞🍷");
 });
 
-
 document.getElementById('img7').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'A Última Ceia' de Leonardo da Vinci")
+    , 5000); 
     localStorage.setItem("Pontuacao", 7);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica: ☂️👗");
 });
 
 document.getElementById('img8').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'Mulher com Sombrinha' de Claude Monet")
+    , 5000); 
     localStorage.setItem("Pontuacao", 8);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica:  👶🏼🪐");
 });
 
 document.getElementById('img9').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'O Nascimento de Vênus' de Sandro Botticelli")
+    , 5000); 
     localStorage.setItem("Pontuacao", 9);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica: 💪💪🤚🤚🧔🏻‍♂️🦵🦵🦶🦶");
 });
 
 document.getElementById('img10').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'Homem Vitruviano' de Leonardo da Vinci")
+    , 5000); 
     localStorage.setItem("Pontuacao", 10);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica:  11 - 🫳🏻👈🏻");
 });
 document.getElementById('img11').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'A Criacão de Adão' de Michelangelo")
+    , 5000); 
     localStorage.setItem("Pontuacao", 11);
-    alert("Próxima dica:  😘😍😄");
+    alert("Próxima dica: 👨‍👩‍👧‍👦🏜💀");
 });
-document.getElementById('img12').addEventListener("targetFound", event  => {
+
+document.getElementById('img11').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'Retirantes' de Candido Portinari e GANHOU O JOGO!!!")
+    , 5000); 
     localStorage.setItem("Pontuacao", 12);
-    alert("Próxima dica:  😘😍😄");
 });
+

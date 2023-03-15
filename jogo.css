@@ -27,6 +27,13 @@ button{
     width: 10rem;
     background-color: rgb(167, 77, 180);
     font-size: larger;
+    color: white;
+    cursor: pointer;
+}
+
+button :focus{
+    background-color: rgb(155, 39, 173);
+    color: white;
 }
 
 img{
