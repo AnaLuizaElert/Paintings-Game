@@ -1,5 +1,5 @@
 function startGame(){
-    document.getElementById('main').innerHTML(
+    document.getElementById('main').innerHTML =
         `
         <a-scene mindar-image="imageTargetSrc: ./targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
             <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -18,8 +18,7 @@ function startGame(){
             <a-entity mindar-image-target="targetIndex: 11" id="img12"></a-entity>
 
         </a-scene>
-        `
-    );
+        `;
     alert("Primeira dica: ");    
 }
 
