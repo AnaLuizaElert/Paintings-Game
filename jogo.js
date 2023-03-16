@@ -23,8 +23,8 @@ function startGame() {
                 alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch - Pontuação: " + localStorage.getItem("Pontuacao"))
                 , 5000);
 
-            const node = document.createElement("a-entity id='img2' mindar-image-target='targetIndex: 1'");
-            document.getElementById('scene').appendChild(node);
+            let html = "<a-entity id='img2' mindar-image-target='targetIndex: 2'></a-entity>";
+            document.getElementById('scene').insertAdjacentHTML("afterend", html);
             alert("Próxima dica: 🌻");
         });
         var target2 = document.getElementById('img2');
