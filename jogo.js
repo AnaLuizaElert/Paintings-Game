@@ -22,7 +22,7 @@ function startGame() {
                 , 5000);
 
             let html = "<a-entity id='img2' mindar-image-target='targetIndex: 1'></a-entity>";
-            document.getElementById('scene').insertAdjacentHTML("beforeend", html);
+            document.getElementById('scene').insertAdjacentHTML("afterbegin", html);
             alert("Próxima dica: 🌻");
         });
         var target2 = document.getElementById('img2');
