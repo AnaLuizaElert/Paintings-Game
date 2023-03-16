@@ -1,4 +1,4 @@
-function startGame() {
+function startGame(){
     let target1 = document.querySelector('#img1');
     let target2 = document.querySelector('#img2');
     let target3 = document.querySelector('#img3');
@@ -36,121 +36,124 @@ function startGame() {
         </a-scene>
         <script src="./jogo.js"></script>
         `;
-    alert("Primeira dica: 😱");
+    alert("Primeira dica: 😱");    
 
-    target1.addEventListener("targetFound", event => {
-        setInterval(
-            alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
-            , 5000);
-        localStorage.setItem("Pontuacao", 1);
-        alert("Próxima dica:  🌻");
-    });
-
-    target2.addEventListener("targetFound", event => {
-        setInterval(
-            alert("Parabéns!! Você encontrou a pintura 'Doze Girassóis' de Vincent van Gogh")
-            , 5000);
-        localStorage.setItem("Pontuacao", 2);
-        alert("Próxima dica:  🌃");
-    });
-
-    if (target3) {
-        target3.addEventListener("targetFound", event => {
+    if(target1){
+        target1.addEventListener("targetFound", event => {
+            setInterval(
+                alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
+            , 5000); 
+            localStorage.setItem("Pontuacao", 1);
+            alert("Próxima dica:  🌻");
+        });
+    }
+    
+    if(target2){
+        target2.addEventListener("targetFound", event  => {
+            setInterval(
+                alert("Parabéns!! Você encontrou a pintura 'Doze Girassóis' de Vincent van Gogh")
+            , 5000); 
+            localStorage.setItem("Pontuacao", 2);
+            alert("Próxima dica:  🌃");
+        });
+    }
+    if(target3){
+        target3.addEventListener("targetFound", event  => {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'Noite Estrelada' de Vincent van Gogh")
-                , 5000);
+            , 5000); 
             localStorage.setItem("Pontuacao", 3);
             alert("Próxima dica: 👩🏻");
         });
     }
-
-
-    if (target4) {
-        target4.addEventListener("targetFound", event => {
+    
+    
+    if(target4){
+        target4.addEventListener("targetFound", event  => {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'Mona Lisa' de Leonardo da Vinci")
-                , 5000);
+            , 5000); 
             localStorage.setItem("Pontuacao", 4);
             alert("Próxima dica:   🦶🏜");
         });
     }
-
-    if (target5) {
-        target5.addEventListener("targetFound", event => {
+    
+    if(target5){
+        target5.addEventListener("targetFound", event  => {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'Abaporu' de Tarsila do Amaral")
-                , 5000);
+            , 5000); 
             localStorage.setItem("Pontuacao", 5);
             alert("Próxima dica:  🕰🫠🏜");
         });
     }
-
-    if (target6) {
-        target6.addEventListener("targetFound", event => {
+    
+    if(target6){
+        target6.addEventListener("targetFound", event  => {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'A Persistência da Memória'de Salvador Dalí")
-                , 5000);
+            , 5000); 
             localStorage.setItem("Pontuacao", 6);
             alert("Próxima dica: 🍞🍷");
         });
     }
-
-    if (target7) {
-        target7.addEventListener("targetFound", event => {
+    
+    if(target7){
+        target7.addEventListener("targetFound", event  => {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'A Última Ceia' de Leonardo da Vinci")
-                , 5000);
+            , 5000); 
             localStorage.setItem("Pontuacao", 7);
             alert("Próxima dica: ☂️👗");
         });
     }
-
-    if (target8) {
-        target8.addEventListener("targetFound", event => {
+    
+    if(target8){
+        target8.addEventListener("targetFound", event  => {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'Mulher com Sombrinha' de Claude Monet")
-                , 5000);
+            , 5000); 
             localStorage.setItem("Pontuacao", 8);
             alert("Próxima dica:  👶🏼🪐");
         });
     }
-
-
-    if (target9) {
-        target9.addEventListener("targetFound", event => {
+    
+    
+    if(target9){
+        target9.addEventListener("targetFound", event  => {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'O Nascimento de Vênus' de Sandro Botticelli")
-                , 5000);
+            , 5000); 
             localStorage.setItem("Pontuacao", 9);
             alert("Próxima dica: 💪💪🤚🤚🧔🏻‍♂️🦵🦵🦶🦶");
         });
     }
-
-    if (target10) {
-        target10.addEventListener("targetFound", event => {
+    
+    if(target10){
+        target10.addEventListener("targetFound", event  => {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'Homem Vitruviano' de Leonardo da Vinci")
-                , 5000);
+            , 5000); 
             localStorage.setItem("Pontuacao", 10);
             alert("Próxima dica:  11 - 🫳🏻👈🏻");
         });
     }
-
-    if (target11) {
-        target11.addEventListener("targetFound", event => {
+    
+    if(target11){
+        target11.addEventListener("targetFound", event  => {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'A Criacão de Adão' de Michelangelo")
-                , 5000);
+            , 5000); 
             localStorage.setItem("Pontuacao", 11);
             alert("Próxima dica: 👨‍👩‍👧‍👦🏜💀");
         });
     }
-
-    if (target12) {
-        target12.addEventListener("targetFound", event => {
+    
+    if(target12){
+        target12.addEventListener("targetFound", event  => {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'Retirantes' de Candido Portinari e GANHOU O JOGO!!!")
-                , 5000);
+            , 5000); 
             localStorage.setItem("Pontuacao", 12);
         });
     }
