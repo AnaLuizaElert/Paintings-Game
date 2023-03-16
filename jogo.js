@@ -23,7 +23,7 @@ function startGame() {
                 alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch - Pontuação: " + localStorage.getItem("Pontuacao"))
                 , 5000);
 
-            let html = "<a-entity id='img2' mindar-image-target='targetIndex: 2'></a-entity>";
+            let html = "<a-entity id='img2' mindar-image-target='targetIndex: 1'></a-entity>";
             document.getElementById('scene').insertAdjacentHTML("beforeend", html);
             alert("Próxima dica: 🌻");
         });
@@ -36,14 +36,13 @@ function startGame() {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'Doze Girassóis' de Vincent van Gogh - Pontuação: " + localStorage.getItem("Pontuacao"))
                 , 5000);
-            document.getElementByTagName('a-scene').innerHTML = 
-            "<a-entity id='img2' mindar-image-target='targetIndex: 2'></a-entity>";
+                let html = "<a-entity id='img3' mindar-image-target='targetIndex: 2'></a-entity>";
+                document.getElementById('scene').insertAdjacentHTML("beforeend", html);
             alert("Próxima dica:  🌃");
         });
         var target3 = document.getElementById('img3');
     }
 
-    // <a-entity id="img3" mindar-image-target="targetIndex: 2"></a-entity>
     // <a-entity id="img4" mindar-image-target="targetIndex: 3"></a-entity>
     // <a-entity id="img5" mindar-image-target="targetIndex: 4"></a-entity>
     // <a-entity id="img6" mindar-image-target="targetIndex: 5"></a-entity>
@@ -54,27 +53,31 @@ function startGame() {
     // <a-entity id="img11" mindar-image-target="targetIndex: 10"></a-entity>
     // <a-entity id="img12" mindar-image-target="targetIndex: 11"></a-entity>
 
-    // if (target4) {
-    //     target3.addEventListener("targetFound", event => {
-    //         localStorage.setItem("Pontuacao", '3');
-    //         setInterval(
-    //             alert("Parabéns!! Você encontrou a pintura 'Noite Estrelada' de Vincent van Gogh - Pontuação: " + localStorage.getItem("Pontuacao"))
-    //             , 5000);
-    //         alert("Próxima dica: 👩🏻");
-    //     });
-    // }
+    if (target3) {
+        target3.addEventListener("targetFound", event => {
+            localStorage.setItem("Pontuacao", '3');
+            setInterval(
+                alert("Parabéns!! Você encontrou a pintura 'Noite Estrelada' de Vincent van Gogh - Pontuação: " + localStorage.getItem("Pontuacao"))
+                , 5000);
+            let html = "<a-entity id='img4' mindar-image-target='targetIndex: 3'></a-entity>";
+            document.getElementById('scene').insertAdjacentHTML("beforeend", html);
+            alert("Próxima dica: 👩🏻");
+        });
+    }
 
 
 
-    // if (target4) {
-    //     target4.addEventListener("targetFound", event => {
-    //         localStorage.setItem("Pontuacao", '4');
-    //         setInterval(
-    //             alert("Parabéns!! Você encontrou a pintura 'Mona Lisa' de Leonardo da Vinci - Pontuação: " + localStorage.getItem("Pontuacao"))
-    //             , 5000);
-    //         alert("Próxima dica:   🦶🏜");
-    //     });
-    // }
+    if (target4) {
+        target4.addEventListener("targetFound", event => {
+            localStorage.setItem("Pontuacao", '4');
+            setInterval(
+                alert("Parabéns!! Você encontrou a pintura 'Mona Lisa' de Leonardo da Vinci - Pontuação: " + localStorage.getItem("Pontuacao"))
+                , 5000);
+                let html = "<a-entity id='img5' mindar-image-target='targetIndex: 4'></a-entity>";
+                document.getElementById('scene').insertAdjacentHTML("beforeend", html);
+            alert("Próxima dica:   🦶🏜");
+        });
+    }
 
     // if (target5) {
     //     target5.addEventListener("targetFound", event => {
