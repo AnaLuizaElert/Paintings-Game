@@ -3,35 +3,35 @@
 //     alert("Primeira dica: 😱");    
 // }
 
-var target1 = document.querySelector('#img1');
-var target2 = document.querySelector('#img2');
-var target3 = document.querySelector('#img3');
-var target4 = document.querySelector('#img4');
-var target5 = document.querySelector('#img5');
-var target6 = document.querySelector('#img6');
-var target7 = document.querySelector('#img7');
-var target8 = document.querySelector('#img8');
-var target9 = document.querySelector('#img9');
-var target10 = document.querySelector('#img10');
-var target11 = document.querySelector('#img11');
-var target12 = document.querySelector('#img12');
+let target1 = document.querySelector('#img1');
+let target2 = document.querySelector('#img2');
+let target3 = document.querySelector('#img3');
+let target4 = document.querySelector('#img4');
+let target5 = document.querySelector('#img5');
+let target6 = document.querySelector('#img6');
+let target7 = document.querySelector('#img7');
+let target8 = document.querySelector('#img8');
+let target9 = document.querySelector('#img9');
+let target10 = document.querySelector('#img10');
+let target11 = document.querySelector('#img11');
+let target12 = document.querySelector('#img12');
 
-if(target1){
-    target1.addEventListener("markerFound", event => {
+// if(target1){
+    target1.addEventListener("targetFound", event => {
         // setInterval(
         //     alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
         // , 5000); 
-        localStorage.setItem("Pontuacao", 1);
+        // localStorage.setItem("Pontuacao", 1);
         alert("Próxima dica:  🌻");
     });
-}
+// }
 
 if(target2){
     target2.addEventListener("targetFound", event  => {
         setInterval(
             alert("Parabéns!! Você encontrou a pintura 'Doze Girassóis' de Vincent van Gogh")
         , 5000); 
-        localStorage.setItem("Pontuacao", 2);
+        // localStorage.setItem("Pontuacao", 2);
         alert("Próxima dica:  🌃");
     });
 }
