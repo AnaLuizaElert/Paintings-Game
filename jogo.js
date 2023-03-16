@@ -15,7 +15,7 @@ function startGame(){
 
 
     document.getElementById('main').style.background = "transparent";
-    document.getElementById('main').innerHTML =
+    document.getElementById('body').innerHTML =
         `
         <a-scene mindar-image="imageTargetSrc: ./targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
             <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -43,7 +43,7 @@ function startGame(){
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
             , 5000); 
-            localStorage.setItem("Pontuacao", 1);
+            // localStorage.setItem("Pontuacao", 1);
             alert("Próxima dica:  🌻");
         });
     }
