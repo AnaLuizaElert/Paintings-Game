@@ -38,7 +38,7 @@ var target11 = document.querySelector('#img11');
 var target12 = document.querySelector('#img12');
 
 if(target1){
-    target1.addEventListener("targetFound", event => {
+    target1.addEventListener("markerFound", event => {
         // setInterval(
         //     alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
         // , 5000); 
