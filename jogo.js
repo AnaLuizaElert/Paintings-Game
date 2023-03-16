@@ -39,9 +39,9 @@ var target12 = document.querySelector('#img12');
 
 if(target1){
     target1.addEventListener("markerFound", function() {
-        setInterval(
-            alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
-        , 5000); 
+        // setInterval(
+        //     alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
+        // , 5000); 
         localStorage.setItem("Pontuacao", 1);
         alert("Próxima dica:  🌻");
     });
