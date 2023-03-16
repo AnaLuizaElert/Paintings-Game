@@ -17,7 +17,7 @@ function startGame() {
     const target11 = document.getElementById('img11');
     const target12 = document.getElementById('img12');
 
-    if (target1) {
+    if (localStorage.getItem("Pontuacao") == 0) {
         target1.addEventListener("targetFound", event => {
             localStorage.setItem("Pontuacao", '1');
             setInterval(
@@ -27,7 +27,7 @@ function startGame() {
         });
     }
 
-    if (target2) {
+    if (localStorage.getItem("Pontuacao") == 1) {
         target2.addEventListener("targetFound", event => {
             localStorage.setItem("Pontuacao", '2');
             setInterval(
@@ -37,7 +37,7 @@ function startGame() {
         });
     }
 
-    if (target3) {
+    if (localStorage.getItem("Pontuacao") == 2) {
         target3.addEventListener("targetFound", event => {
             localStorage.setItem("Pontuacao", '3');
             setInterval(
