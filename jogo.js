@@ -6,8 +6,6 @@ function startGame() {
 
     var target1 = document.getElementById('img1');
    
-    // var target4 = document.getElementById('img4');
-    // var target5 = document.getElementById('img5');
     // var target6 = document.getElementById('img6');
     // var target7 = document.getElementById('img7');
     // var target8 = document.getElementById('img8');
@@ -63,6 +61,7 @@ function startGame() {
             document.getElementById('scene').insertAdjacentHTML("beforeend", html);
             alert("Próxima dica: 👩🏻");
         });
+        var target4 = document.getElementById('img4');
     }
 
 
@@ -77,6 +76,7 @@ function startGame() {
                 document.getElementById('scene').insertAdjacentHTML("beforeend", html);
             alert("Próxima dica:   🦶🏜");
         });
+    // var target5 = document.getElementById('img5');
     }
 
     // if (target5) {
