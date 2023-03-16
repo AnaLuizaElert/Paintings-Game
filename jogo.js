@@ -19,7 +19,7 @@ function startGame(){
         <a-scene mindar-image="imageTargetSrc: ./targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
             <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
-            <a-entity id="img1" mindar-image-target="targetIndex: 0" ></a-entity>
+            <a-entity id="img1" mindar-image-target="targetIndex: 0" color="transparent"></a-entity>
             <a-entity id="img2" mindar-image-target="targetIndex: 1" ></a-entity>
             <a-entity id="img3" mindar-image-target="targetIndex: 2" ></a-entity>
             <a-entity id="img4" mindar-image-target="targetIndex: 3" ></a-entity>
