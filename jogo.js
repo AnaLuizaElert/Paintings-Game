@@ -34,9 +34,8 @@ function startGame() {
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'Doze Girassóis' de Vincent van Gogh - Pontuação: " + localStorage.getItem("Pontuacao"))
                 , 5000);
-            document.getElementsByTagName('a-scene').innerHTMl = 
+            document.getElementByTagName('a-scene').innerHTML = 
             "<a-entity id='img2' mindar-image-target='targetIndex: 2'></a-entity>";
-
             alert("Próxima dica:  🌃");
         });
         var target3 = document.getElementById('img3');
