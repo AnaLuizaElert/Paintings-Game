@@ -1,28 +1,7 @@
-function startGame(){
-    document.getElementById('main').style.background = "transparent";
-    document.getElementById('body').innerHTML =
-        `
-        <a-scene mindar-image="imageTargetSrc: ./targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-            <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-
-            <a-entity id="img1" mindar-image-target="targetIndex: 0" ></a-entity>
-            <a-entity id="img2" mindar-image-target="targetIndex: 1" ></a-entity>
-            <a-entity id="img3" mindar-image-target="targetIndex: 2" ></a-entity>
-            <a-entity id="img4" mindar-image-target="targetIndex: 3" ></a-entity>
-            <a-entity id="img5" mindar-image-target="targetIndex: 4" ></a-entity>
-            <a-entity id="img6" mindar-image-target="targetIndex: 5" ></a-entity>
-            <a-entity id="img7" mindar-image-target="targetIndex: 6" ></a-entity>
-            <a-entity id="img8" mindar-image-target="targetIndex: 7" ></a-entity>
-            <a-entity id="img9" mindar-image-target="targetIndex: 8" ></a-entity>
-            <a-entity id="img10" mindar-image-target="targetIndex: 9"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 10" id="img11"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 11" id="img12"></a-entity>
-
-        </a-scene>
-        <script src="./jogo.js"></script>
-        `;
-    alert("Primeira dica: 😱");    
-}
+// function startGame(){
+//     document.getElementById('main').style.background = "transparent";
+//     alert("Primeira dica: 😱");    
+// }
 
 var target1 = document.querySelector('#img1');
 var target2 = document.querySelector('#img2');
