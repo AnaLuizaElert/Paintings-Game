@@ -5,8 +5,7 @@ function startGame() {
     alert("Primeira dica: 😱");
 
     var target1 = document.getElementById('img1');
-    var target2 = document.getElementById('img2');
-    var target3 = document.getElementById('img3');
+
     // var target6 = document.getElementById('img6');
     // var target7 = document.getElementById('img7');
     // var target8 = document.getElementById('img8');
@@ -26,6 +25,7 @@ function startGame() {
             document.getElementById('scene').insertAdjacentHTML("beforeend", html);
             alert("Próxima dica: 🌻");
         });
+        var target2 = document.getElementById('img2');
     }
 
     if(target2){
@@ -38,6 +38,7 @@ function startGame() {
                 document.getElementById('scene').insertAdjacentHTML("beforeend", html);
             alert("Próxima dica:  🌃");
         });
+        var target3 = document.getElementById('img3');
     }
 
     // <a-entity id="img4" mindar-image-target="targetIndex: 3"></a-entity>
