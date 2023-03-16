@@ -24,10 +24,10 @@ function startGame(){
     alert("Primeira dica: 😱");    
 }
 
-document.getElementById('img1').addEventListener("markerFound", event  => {
-    // setInterval(
-    //     alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
-    // , 5000); 
+document.querySelector('#img1').addEventListener("targetFound", event  => {
+    setInterval(
+        alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
+    , 5000); 
     localStorage.setItem("Pontuacao", 1);
     alert("Próxima dica:  🌻");
 });
