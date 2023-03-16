@@ -5,16 +5,16 @@ function startGame(){
         <a-scene mindar-image="imageTargetSrc: ./targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
             <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
-            <a-entity mindar-image-target="targetIndex: 0" id="img1"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 1" id="img2"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 2" id="img3"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 3" id="img4"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 4" id="img5"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 5" id="img6"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 6" id="img7"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 7" id="img8"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 8" id="img9"></a-entity>
-            <a-entity mindar-image-target="targetIndex: 9" id="img10"></a-entity>
+            <a-entity id="img1" mindar-image-target="targetIndex: 0" ></a-entity>
+            <a-entity id="img2" mindar-image-target="targetIndex: 1" ></a-entity>
+            <a-entity id="img3" mindar-image-target="targetIndex: 2" ></a-entity>
+            <a-entity id="img4" mindar-image-target="targetIndex: 3" ></a-entity>
+            <a-entity id="img5" mindar-image-target="targetIndex: 4" ></a-entity>
+            <a-entity id="img6" mindar-image-target="targetIndex: 5" ></a-entity>
+            <a-entity id="img7" mindar-image-target="targetIndex: 6" ></a-entity>
+            <a-entity id="img8" mindar-image-target="targetIndex: 7" ></a-entity>
+            <a-entity id="img9" mindar-image-target="targetIndex: 8" ></a-entity>
+            <a-entity id="img10" mindar-image-target="targetIndex: 9"></a-entity>
             <a-entity mindar-image-target="targetIndex: 10" id="img11"></a-entity>
             <a-entity mindar-image-target="targetIndex: 11" id="img12"></a-entity>
 
@@ -24,7 +24,7 @@ function startGame(){
     alert("Primeira dica: 😱");    
 }
 
-document.getElementById('img1').addEventListener("targetFound", event  => {
+document.getElementById('img1').addEventListener("markerFound", event  => {
     // setInterval(
     //     alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
     // , 5000); 
