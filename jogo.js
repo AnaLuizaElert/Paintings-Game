@@ -24,7 +24,9 @@ function startGame(){
     alert("Primeira dica: 😱");    
 }
 
-document.querySelector('#img1').addEventListener("targetFound", event  => {
+var target1 = document.querySelector('#img1');
+
+target1.addEventListener("targetFound", function() {
     setInterval(
         alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
     , 5000); 
