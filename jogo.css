@@ -9,7 +9,7 @@ main{
     flex-wrap: wrap;
     height: 100vh;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(198,122,177,1) 0%, rgba(173,129,161,0.9668242296918768) 49%, rgba(255,255,255,1) 100%);
