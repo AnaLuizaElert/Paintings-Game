@@ -22,6 +22,8 @@ function startGame() {
         setInterval(
             alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch - Pontuação: " + localStorage.getItem("Pontuacao"))
             , 5000);
+        document.getElementsByTagName('a-scene').innerHTMl = 
+        "<a-entity id='img2' mindar-image-target='targetIndex: 1'></a-entity>";
         alert("Próxima dica: 🌻");
     });
 
@@ -30,8 +32,22 @@ function startGame() {
         setInterval(
             alert("Parabéns!! Você encontrou a pintura 'Doze Girassóis' de Vincent van Gogh - Pontuação: " + localStorage.getItem("Pontuacao"))
             , 5000);
+        document.getElementsByTagName('a-scene').innerHTMl = 
+        "<a-entity id='img2' mindar-image-target='targetIndex: 2'></a-entity>";
+
         alert("Próxima dica:  🌃");
     });
+
+    // <a-entity id="img3" mindar-image-target="targetIndex: 2"></a-entity>
+    // <a-entity id="img4" mindar-image-target="targetIndex: 3"></a-entity>
+    // <a-entity id="img5" mindar-image-target="targetIndex: 4"></a-entity>
+    // <a-entity id="img6" mindar-image-target="targetIndex: 5"></a-entity>
+    // <a-entity id="img7" mindar-image-target="targetIndex: 6"></a-entity>
+    // <a-entity id="img8" mindar-image-target="targetIndex: 7"></a-entity>
+    // <a-entity id="img9" mindar-image-target="targetIndex: 8"></a-entity>
+    // <a-entity id="img10" mindar-image-target="targetIndex: 9"></a-entity>
+    // <a-entity id="img11" mindar-image-target="targetIndex: 10"></a-entity>
+    // <a-entity id="img12" mindar-image-target="targetIndex: 11"></a-entity>
 
     target3.addEventListener("targetFound", event => {
         localStorage.setItem("Pontuacao", '3');
