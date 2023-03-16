@@ -11,8 +11,8 @@ main{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     box-sizing: border-box;
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(198,122,177,1) 0%, rgba(173,129,161,0.9668242296918768) 49%, rgba(255,255,255,1) 100%);
