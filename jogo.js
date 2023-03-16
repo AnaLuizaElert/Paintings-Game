@@ -1,18 +1,17 @@
+let target1 = document.querySelector('#img1');
+let target2 = document.querySelector('#img2');
+let target3 = document.querySelector('#img3');
+let target4 = document.querySelector('#img4');
+let target5 = document.querySelector('#img5');
+let target6 = document.querySelector('#img6');
+let target7 = document.querySelector('#img7');
+let target8 = document.querySelector('#img8');
+let target9 = document.querySelector('#img9');
+let target10 = document.querySelector('#img10');
+let target11 = document.querySelector('#img11');
+let target12 = document.querySelector('#img12');
+
 function startGame(){
-    let target1 = document.querySelector('#img1');
-    let target2 = document.querySelector('#img2');
-    let target3 = document.querySelector('#img3');
-    let target4 = document.querySelector('#img4');
-    let target5 = document.querySelector('#img5');
-    let target6 = document.querySelector('#img6');
-    let target7 = document.querySelector('#img7');
-    let target8 = document.querySelector('#img8');
-    let target9 = document.querySelector('#img9');
-    let target10 = document.querySelector('#img10');
-    let target11 = document.querySelector('#img11');
-    let target12 = document.querySelector('#img12');
-
-
 
     document.getElementById('main').style.background = "transparent";
     document.getElementById('body').innerHTML =
@@ -39,7 +38,9 @@ function startGame(){
     alert("Primeira dica: 😱");    
 
     if(target1){
+        console.log("target1")
         target1.addEventListener("targetFound", event => {
+            console.log("targetfound")
             setInterval(
                 alert("Parabéns!! Você encontrou a pintura 'O Grito' de Edvard Munch")
             , 5000); 
@@ -57,6 +58,7 @@ function startGame(){
             alert("Próxima dica:  🌃");
         });
     }
+
     if(target3){
         target3.addEventListener("targetFound", event  => {
             setInterval(
