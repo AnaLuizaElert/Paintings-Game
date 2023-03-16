@@ -1,3 +1,8 @@
+@font-face {
+    font-family: cursivo;
+    src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +37,7 @@ button{
     font-size: larger;
     color: white;
     cursor: pointer;
+    font-family: cursivo;
 }
 
 button :focus{
